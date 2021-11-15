@@ -1,0 +1,264 @@
+@font-face {
+    font-family: 'RIDIBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --main-color1:#E3A831;
+    --main-color2:#FFFDE6;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-size:16px;
+    font-family: 'Noto Sans KR', sans-serif;
+    width:100%;
+    max-width:600px;
+    margin:0 auto;
+}
+
+/* 
+타이틀 영역 사진: 64% 
+텍스트 영역 : 36% 
+*/
+#title{
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+}
+#title figure{
+    width: 100%;
+    height: 78vh;
+    /* outline: 1px solid red; */
+    background: #ccc;
+    background:url(../images/044.jpg) no-repeat;
+    background-size: cover;
+    background-position: -20% 0;
+    position: relative;
+}
+#title figure figcaption{
+    background-color: #fff;
+    background-color: rgba( 255, 255, 255, 0.91);
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    width:120px;
+    height: 110px;
+    font-family: 'RIDIBatang';
+    text-align: center;
+    font-size:14px;
+    line-height: 25px;
+}
+#title figure figcaption p{
+    margin-top: 25px;
+}
+#title figure figcaption span{
+    color:var(--main-color1);
+}
+
+#title .title-info .weddingday{
+    font-size:8px;
+    font-weight: 500;
+    color:var(--main-color1);
+    letter-spacing: 0.18rem;
+    line-height: 11px;
+    text-align: center;
+    margin-top: 23px;
+    
+}
+#title .title-info .address{
+    text-align: center;
+    margin-top: 17px;
+    font-family: 'RIDIBatang';
+    line-height: 25px;
+}
+
+/* 인사말 영역 */
+#intro{
+    text-align:center;
+    background: var(--main-color2);
+    color:#000;
+    padding-top: 26px;
+    padding-bottom: 26px;
+}
+.intro-container{
+    margin:-10px  15px;
+    border: 1px solid var(--main-color1);
+}
+.intro-box{
+    font-family: 'RIDIBatang';
+    padding-left: 43px;
+    padding-right: 43px;
+    margin-bottom: 60px;
+    margin-top: 10px;
+}
+#intro h2{
+    color:var(--main-color1);
+    padding-top: 26px;
+    font-size:20px;
+    font-weight: 400;
+}
+#intro p{
+    font-family: 'RIDIBatang';
+    font-size:14px;
+    line-height: 25px;
+}
+#intro .guest-box{
+    font-family: 'RIDIBatang';
+    margin-bottom: 23px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    /* outline:1px solid red; */
+
+}
+.mb100{
+    margin-bottom: 90px;
+}
+#intro .guest-box  .guest {
+    margin-right: 20px;
+    /* outline:1px solid blue; */
+}
+#intro .guest-box .guest h3{
+    font-size:12px;
+    color:var(--main-color1);
+}
+#intro .guest-box .guest p{
+    font-size: 14px;
+    font-weight: 300;
+}
+#intro .guest-box .guest b{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#intro .guest-box a > img {
+    /* outline:1px solid #fff; */
+    margin-bottom:-22px;
+}
+#intro .guest-box a {
+    display:block;
+    width: 48px;
+    height: 48px;
+    background: var(--main-color1);
+    border-radius: 50%;
+    /* outline:1px solid green; */
+}
+#gallery h2{
+    font-size:20px;
+    font-weight:bold;
+    margin: 36px 0;
+    text-align: center;
+    color:var(--main-color1);
+}
+.img-box img{
+    width:100%;
+    max-width:100%;
+    height: 45vh;
+    object-fit: cover;
+    margin-bottom: 32px;
+}
+.img-gallery{
+    display:flex;
+    flex-wrap: wrap;
+    padding: 0px 15px;
+}
+.img-gallery img{
+    width: calc(100% / 3);
+    display:block;
+    max-width:100%;
+    max-height:auto;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    object-fit: cover;
+    height: 18vh;
+}
+.img-gallery img:nth-child(3){
+    padding-right: 0;
+}
+.img-gallery img:nth-child(6){
+    padding-right: 0;
+}
+#gallery a{
+    color:var(--main-color1);
+    display: block;
+    font-size:14px;
+    margin-top: 14px;
+    text-align:center;
+    font-family: 'RIDIBatang';
+    margin-bottom: 72px;
+}
+/* 오시는길  */
+#map{
+    margin-bottom: 52px;
+}
+#map h2{
+    font-size:20px;
+    margin-top: 50px;
+    margin-bottom: 26px;
+    text-align: center;
+    color:var(--main-color1);
+
+}
+#map h3{
+    font-size:18px;
+    font-weight: 400;
+}
+#map h3 span img{
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 5px;
+    width: 22px;
+    height: 22px;
+    
+}
+.text-box{
+    margin-top: 32px;
+    padding-left: 15px;
+}
+.text-box .map-info{
+    margin-top: 6px;
+    margin-bottom: 27px;
+    font-size:14px;
+    color:#707070;
+}
+.text-box .text-title{
+    font-size:14px;
+    font-weight: 500;
+    color:var(--main-color1);
+}
+.text-box .text-info{
+    font-size:13px;
+    color:#707070;
+    margin-bottom: 18px;
+}
+/* footer */
+footer{
+    width: 100%;
+    height: 15vh;
+    background-color: var(--main-color1);
+    text-align: center;
+    padding-top: 24px;
+    color:#fff;
+}
+footer h2{
+    font-size: 24px;
+    font-weight: normal;
+}
+footer p{
+    font-size:14px;
+}
